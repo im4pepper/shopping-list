@@ -68,7 +68,7 @@ a:link {
 #add-items {
 	background-color: #FFFFFF;
 	border: none;
-	color: #CCCCCC;
+	color: #AAAAAA;
     display: inline-block;
     font-size: 24px;
     height: 1.45em;
@@ -113,7 +113,7 @@ a:link {
 #remove-item {
 	background-color: #B6B7B6;
 	border: none;
-	color: #D1D1D1;
+	color: #DEDEDE;
     display: inline-block;
     font-size: 24px;
     text-decoration: line-through;
