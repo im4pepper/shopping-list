@@ -4,7 +4,7 @@ body {
   border: 0;
   background-color: #FFFFFF;
     /* Typography Declarations */
-    color: #FFFFFF;
+    color: #cccccc;
     font-size: 1em;
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -58,6 +58,7 @@ a:link {
 .masthead {
 	padding: 0.5em 0 0 0;
 	background-color: #B6D57A;
+	background-size: cover;
 	width: 100%;
 	/* max-width: 25em; */
 	margin-left: auto;
@@ -69,6 +70,7 @@ a:link {
 	padding: 1.5em 0;
 	text-align: center;
 	background-color: #B6D57A;
+	background-size: cover;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -114,7 +116,7 @@ a:link {
 	vertical-align: bottom;
 }
 
-#list {
+#list ul {
 	text-align: center;
 }
 
