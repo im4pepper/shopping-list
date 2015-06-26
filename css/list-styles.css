@@ -2,9 +2,13 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  background-color: #FFFFFF;
+  background-color: #B6B7B6;
+  background-image: url('../images/bkg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 15em;
     /* Typography Declarations */
-    color: #cccccc;
+    color: #CCCCCC;
     font-size: 1em;
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -214,15 +218,17 @@ a:link {
 .list-items {
 	padding: 2em 0 5em 0;
 	/* text-align: center; */
-	display: block;
 	background-color: #FFFFFF;
-	max-width: 35em;
+	background-size: cover;
+	min-height: 6em;
+	/*max-width: 35em;*/
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.list-items .list {
+.list-items #list {
 	display: block;
+	max-width: 32em;
 	margin-bottom: 0.6em;
 	margin-left: auto;
 	margin-right: auto;
@@ -230,8 +236,7 @@ a:link {
 
 .footer {
 	padding: 2em 0;
-	background-color: #B6B7B6;
-	min-height: 3.5em;
+	/*background-color: #B6B7B6;*/
 	width: 100%;
 	/* max-width: 25em; */
 	margin-left: auto;

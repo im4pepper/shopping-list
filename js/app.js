@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
  $('#add').on("click", function() {
-    console.log( 'I made the click work' );
-    alert('I made the click work');
+    console.log( 'clicking the + icon works' );
+    /* alert('I made the click work'); */
     var new_task = $('#add-items').val();
     $('#list ul').append('<li>'+new_task+'</li>');
     return false;
@@ -10,9 +10,12 @@ $(document).ready(function() {
 
  $('#add-items').keydown(function (e) {
  	if (e.keyCode == 13) {
- 	console.log( 'I made the enter work' );
-    alert('I made the enter work');
+ 		/* postItem(); */
+ 	console.log( 'keydown the enter key works' );
+    /* alert('I made the enter work'); */
  	}
  });
+
+/*$('#list').on('click', '.delete', function(e){e.preventDefault(); $(this).parent().remove()});*/
 
 });
