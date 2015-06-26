@@ -138,14 +138,14 @@ a:link {
 	margin-bottom: 10px;
 }
 
-#remove-item {
+#checked-item {
 	background-color: #B6B7B6;
 	border: none;
 	color: #DEDEDE;
     display: inline-block;
     font-size: 24px;
     text-decoration: line-through;
-    height: 1.44em;
+    height: 1.43em;
     /* line-height: 24pt; */
     /* margin-left: 0.2em; */
     margin-bottom: 10px;
@@ -168,7 +168,7 @@ a:link {
 	margin-bottom: 10px;
 }
 
-.input-added {
+.input-added, .input-checked {
 	text-align: center;
 }
 
@@ -192,7 +192,7 @@ a:link {
 	color: #FFFFFF;
     display: inline-block;
     font-size: 24px;
-    height: 1.44em;
+    height: 1.43em;
     /* line-height: 24pt; */
     /* margin-left: 0.2em; */
     margin-bottom: 10px;
@@ -216,7 +216,7 @@ a:link {
 }
 
 .list-items {
-	padding: 2em 0 5em 0;
+	padding: 2em 0 4.2em 0;
 	/* text-align: center; */
 	background-color: #FFFFFF;
 	background-size: cover;
@@ -228,7 +228,7 @@ a:link {
 
 .list-items #list {
 	display: block;
-	max-width: 32em;
+	max-width: 35em;
 	margin-bottom: 0.6em;
 	margin-left: auto;
 	margin-right: auto;
