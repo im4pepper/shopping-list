@@ -120,10 +120,6 @@ a:link {
 	vertical-align: bottom;
 }
 
-#list ul {
-	text-align: center;
-}
-
 .button, #replace  {
 	border: none;
 	padding: 0;
@@ -163,7 +159,6 @@ a:link {
     background-repeat: no-repeat;
     height: 58px;
 	width: 58px;
-	display: inline-block;
 	vertical-align: bottom;
 	margin-bottom: 10px;
 }
@@ -175,13 +170,12 @@ a:link {
 .button, #check  {
 	border: none;
 	padding: 0;
-	margin: 0;
+	margin: 0 0 10px -10px;
 	background-color: #B6D57A;
 	background-image: url('../images/check.png');
     background-repeat: no-repeat;
     height: 58px;
 	width: 58px;
-	display: inline-block;
 	vertical-align: bottom;
 	margin-bottom: 10px;
 }
@@ -193,15 +187,16 @@ a:link {
     display: inline-block;
     font-size: 24px;
     height: 1.43em;
-    /* line-height: 24pt; */
-    /* margin-left: 0.2em; */
+    line-height: 24pt;
+    margin-left: 0.18em;
+    margin-right: 0.16em;
     margin-bottom: 10px;
     padding: 0.5em 0em 0.5em 1.2em;
     text-align: left;
     width: 14.45em;
 }
 
-.button, #added-remove  {
+.button, #added-remove {
 	border: none;
 	padding: 0;
 	margin: 0;
@@ -216,7 +211,7 @@ a:link {
 }
 
 .list-items {
-	padding: 2em 0 4.2em 0;
+	padding: 1.2em 0 4.2em 0;
 	/* text-align: center; */
 	background-color: #FFFFFF;
 	background-size: cover;
@@ -227,11 +222,14 @@ a:link {
 }
 
 .list-items #list {
-	display: block;
 	max-width: 35em;
 	margin-bottom: 0.6em;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#list ul {
+	list-style-type: none;
 }
 
 .footer {
