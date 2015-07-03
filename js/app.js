@@ -4,7 +4,7 @@ $(document).ready(function() {
 	var removeButton = '<button type="submit" id="remove" name="remove"></button>'
 
 /* limits input characters in the list item */
-$('input').attr('maxlength','27');
+$('input').attr('maxlength','28');
 
 /* builds the 'added item' state */
 function buildList() {
@@ -32,7 +32,7 @@ $('#add-items').keydown(function (e) {
 
 /* removes the item from the list when the 'x' icon is clicked */
 $("ul").on("click", '#remove', function() {
-    $("#myNewItem").remove();
+    $(this).closest("#myNewItem").remove();
     console.log('the remove item button functions');
  });
 
