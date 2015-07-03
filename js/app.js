@@ -2,6 +2,7 @@ $(document).ready(function() {
     /* defines list item buttons */
 	var checkButton = '<button type="submit" id="check" name="check"></button>'
 	var removeButton = '<button type="submit" id="remove" name="remove"></button>'
+    var replaceButton = '<button type ="submit" id="replace" name="replace"></button>'
 
 /* limits input characters in the list item */
 $('input').attr('maxlength','28');
@@ -35,5 +36,18 @@ $("ul").on("click", '#remove', function() {
     $(this).closest("#myNewItem").remove();
     console.log('the remove item button functions');
  });
+
+$("ul").on("click", '#check', function() {
+    console.log('the check button functions');
+});
+
+/*function checkOff(){
+        $('.cross-off').toggle(function () {
+            $(this).closest('#myNewItem').addClass("#checked-Item");
+            console.log("Checked");
+        }, function () {
+            $(this).closest('#myNewItem').removeClass("active");
+        });
+    }*/
 
 });
