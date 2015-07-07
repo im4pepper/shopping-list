@@ -1,8 +1,7 @@
 $(document).ready(function() {
     /* defines list item buttons */
-	var checkButton = '<button type="submit" id="check" name="check"></button>'
-	var removeButton = '<button type="submit" id="remove" name="remove"></button>'
-    var replaceButton = '<button type ="submit" id="replace" name="replace"></button>'
+	var checkButton = '<button class="checked--button" type="submit" id="check" name="check"></button>'
+	var removeButton = '<button class="checked--remove" type="submit" id="remove" name="remove"></button>'
 
 /* limits input characters in the list item */
 $('input').attr('maxlength','28');
@@ -10,7 +9,7 @@ $('input').attr('maxlength','28');
 /* builds the 'added item' state */
 function buildList() {
     var inputText = $('#add-items').val();
-    var inputSpan = '<span id='+"added-item"+'>'+ inputText +'</span>' 
+    var inputSpan = '<span class="need--item" id='+"added-item"+'>'+ inputText +'</span>' 
     var listItem = '<li id="myNewItem">'+ checkButton + inputSpan + removeButton +'</li>'
     $('#list ul').append(listItem);
     $('#add-items').val('');
@@ -37,17 +36,12 @@ $("ul").on("click", '#remove', function() {
     console.log('the remove item button functions');
  });
 
-$("ul").on("click", '#check', function() {
-    console.log('the check button functions');
+$("ul").on("click", '#check' ,function() {
+    $('#check').toggleClass("checked--button unchecked--button");
+    $('#remove').toggleClass("checked--remove unchecked--remove");
+    $('#added-item').toggleClass("need--item have--item");
+  /*$('#remove').removeClass("checked--remove").addClass("unchecked--remove");*/
+     console.log('the check button functions');     
 });
-
-/*function checkOff(){
-        $('.cross-off').toggle(function () {
-            $(this).closest('#myNewItem').addClass("#checked-Item");
-            console.log("Checked");
-        }, function () {
-            $(this).closest('#myNewItem').removeClass("active");
-        });
-    }*/
 
 });
