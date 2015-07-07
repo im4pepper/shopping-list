@@ -36,6 +36,7 @@ $("ul").on("click", '#remove', function() {
     console.log('the remove item button functions');
  });
 
+/* toggles between checked and unchecked item when the check or reload icon is clicked */
 $("ul").on("click", '#check' ,function() {
     $('#check').toggleClass("checked--button unchecked--button");
     $('#remove').toggleClass("checked--remove unchecked--remove");
