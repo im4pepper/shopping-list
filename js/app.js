@@ -1,7 +1,7 @@
 $(document).ready(function() {
     /* defines list item buttons */
-	var checkButton = '<button class="checked--button" type="submit" id="check" name="check"></button>'
-	var removeButton = '<button class="checked--remove" type="submit" id="remove" name="remove"></button>'
+	var checkButton = '<button class="checked--button" type="submit"  name="check"></button>'
+	var removeButton = '<button class="checked--remove" type="submit" name="remove"></button>'
     
 /* limits input characters in the list item */
 $('input').attr('maxlength','28');
@@ -9,8 +9,12 @@ $('input').attr('maxlength','28');
 /* builds the 'added item' state */
 function buildList() {
     var inputText = $('.add-items').val();
+    //Dont want to add anything to the list if its empty
+    if (inputText === '') {
+     return false;
+    }
     var inputSpan = '<span class="need--item" id='+"added-item"+'>'+ inputText +'</span>' 
-    var listItem = '<li class="list--item" id="myNewItem">'+ checkButton + inputSpan + removeButton +'</li>'
+    var listItem = '<li class="list--item myNewItem">'+ checkButton + inputSpan + removeButton +'</li>'
     $('.list ul').append(listItem);
     $('.add-items').val('');
     return false;
@@ -37,18 +41,16 @@ $("ul").on("click", '.checked--remove', function() {
  });
 
 /* toggles between checked and unchecked item when the check or reload icon is clicked */
-$("ul").on("click", ".checked--button" ,function() {
-    $(".checked--button").toggleClass("checked--button unchecked--button");
-    $(".checked--remove").toggleClass("checked--remove unchecked--remove");
-    $(".need--item").toggleClass("need--item have--item");
-    /*$('.checked--button').removeClass("checked--button").addClass("unchecked--button");*/
-     console.log('the check button functions');     
+$("ul").on("click", ".list--item" ,function(event) {
+   //This is an array of all the list items children
+   var $list_item_children = $(event.currentTarget).children(); 
+   //First child is the check box
+  $($list_item_children[0]).toggleClass("checked--button unchecked--button");
+  //Second child is the span element
+  $($list_item_children[1]).toggleClass("need--item have--item");
+  //Third child is the remove button
+  $($list_item_children[2]).toggleClass("checked--remove unchecked--remove");
+  console.log('the check button functions');     
 });
-/*
-$("ul").on("click", "#check" ,function() {
-    $("#check").toggleClass("checked--button unchecked--button");
-    $("#remove").toggleClass("checked--remove unchecked--remove");
-    $("#added-item").toggleClass("need--item have--item");  
-});*/
 
 });
