@@ -93,7 +93,7 @@ a:link {
 	display: inline-block;
 }
 
-#add-items {
+.add-items {
 	background-color: #FFFFFF;
 	border: none;
 	color: #AAAAAA;
@@ -130,7 +130,7 @@ a:link {
 	width: 58px;
 	display: inline-block;
 	vertical-align: bottom;
-	margin: 0 0 10px -10px;
+	margin: 0 0 10px 9px;
 }
 
 .need--item {
@@ -180,21 +180,16 @@ a:link {
 	margin-bottom: 10px;
 }
 
-.input-added, .input-checked {
-	text-align: center;
-}
-
 .checked--button  {
 	border: none;
 	padding: 0;
-	margin: 0 0 10px -10px;
+	margin: 0 0 10px 9px;
 	background-color: #B6D57A;
 	background-image: url('../images/check.png');
     background-repeat: no-repeat;
     height: 58px;
 	width: 58px;
 	vertical-align: bottom;
-	margin-bottom: 10px;
 }
 
 .checked--remove {
@@ -220,17 +215,14 @@ a:link {
 	/*max-width: 35em;*/
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 0.6em;
 }
 
-.list-items #list {
+.list ul {
 	max-width: 35em;
-	margin-bottom: 0.6em;
+	list-style-type: none;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-#list ul {
-	list-style-type: none;
 }
 
 .footer {
