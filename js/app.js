@@ -40,6 +40,11 @@ $("ul").on("click", '.checked--remove', function() {
     console.log('the remove item button functions');
  });
 
+$("ul").on("click", '.unchecked--remove', function() {
+    $(this).closest(".list--item").remove();
+    console.log('the remove item button functions');
+ });
+
 /* toggles between checked and unchecked item when the check or reload icon is clicked */
 $("ul").on("click", ".list--item" ,function(event) {
    //This is an array of all the list items children

@@ -207,7 +207,7 @@ a:link {
 }
 
 .list-items {
-	padding: 1.2em 0 4.2em 0;
+	padding: 1.2em 0 2.2em 0;
 	/* text-align: center; */
 	background-color: #FFFFFF;
 	background-size: cover;
@@ -215,7 +215,6 @@ a:link {
 	/*max-width: 35em;*/
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 0.6em;
 }
 
 .list ul {
