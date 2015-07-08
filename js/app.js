@@ -37,12 +37,18 @@ $("ul").on("click", '.checked--remove', function() {
  });
 
 /* toggles between checked and unchecked item when the check or reload icon is clicked */
-$("ul").on("click", "#check" ,function() {
-    $("#check").toggleClass("checked--button unchecked--button");
-    $("#remove").toggleClass("checked--remove unchecked--remove");
-    $("#added-item").toggleClass("need--item have--item");
+$("ul").on("click", ".checked--button" ,function() {
+    $(".checked--button").toggleClass("checked--button unchecked--button");
+    $(".checked--remove").toggleClass("checked--remove unchecked--remove");
+    $(".need--item").toggleClass("need--item have--item");
     /*$('.checked--button').removeClass("checked--button").addClass("unchecked--button");*/
      console.log('the check button functions');     
 });
+/*
+$("ul").on("click", "#check" ,function() {
+    $("#check").toggleClass("checked--button unchecked--button");
+    $("#remove").toggleClass("checked--remove unchecked--remove");
+    $("#added-item").toggleClass("need--item have--item");  
+});*/
 
 });
