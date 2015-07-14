@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #B6B7B6;
+  background-image: url('../images/bkg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 15em;
+    /* Typography Declarations */
+    color: #CCCCCC;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.03em;
+}
+
+h2{
+	color: #AAAAAA;
+	font-size: 0.8em;
+}
+
+p{
+	color: #FFFFFF;
+	font-size: 1em;
+	text-align: center;
+	font-family: 'Railway', sans-serif;
+	font-weight: 100;
+}
+
+a:link {
+  color: #AAAAAA;
+  text-decoration: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+.masthead .logo {
+	display: block;
+	margin-top: 2.4em;
+	margin-bottom: 0.7em;
+	margin-left: auto;
+	margin-right: auto;
+	/* box-shadow: 10px 10px 5px #ABC56C;
+	-moz-box-shadow: 10px 10px 5px #ABC56C;
+	-webkit-box-shadow: 10px 10px 5px #ABC56C;
+	-khtml-box-shadow: 10px 10px 5px #ABC56C; */
+}
+
+.masthead {
+	padding: 0.5em 0 0 0;
+	background-color: #B6D57A;
+	background-size: cover;
+	width: 100%;
+	/* max-width: 25em; */
+	margin-left: auto;
+	margin-right: auto;
+	border-top: solid 0.5em #ACC66D;
+}
+
+.new-items {
+	padding: 1.5em 0;
+	text-align: center;
+	background-color: #B6D57A;
+	background-size: cover;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: solid 0.25em #ACC66D;
+}
+
+.new-items .input-add {
+	display: block;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.input-add {
+	display: inline-block;
+}
+
+.add-items {
+	background-color: #FFFFFF;
+	border: none;
+	color: #AAAAAA;
+    display: inline-block;
+    font-size: 24px;
+    height: 1.44em;
+    /* line-height: 24pt; */
+    /* margin-left: 0.2em; */
+    padding: 0.5em 0em 0.5em 1.2em;
+    text-align: left;
+    width: 17.1em;
+}
+
+.button, #add  {
+	border: none;
+	padding: 0;
+	margin: 0;
+	background-color: #FFFFFF;
+	background-image: url('../images/add.png');
+    background-repeat: no-repeat;
+    height: 58px;
+	width: 58px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.unchecked--button {
+	border: none;
+	padding: 0;
+	background-color: #B6B7B6;
+	background-image: url('../images/reload.png');
+    background-repeat: no-repeat;
+    height: 58px;
+	width: 58px;
+	display: inline-block;
+	vertical-align: bottom;
+	margin: 0 0 10px 9px;
+}
+
+.need--item {
+	background-color: #B6D57A;
+	border: none;
+	color: #FFFFFF;
+    display: inline-block;
+    font-size: 24px;
+    height: 1.43em;
+    line-height: 24pt;
+    margin-left: 0.18em;
+    margin-right: 0.16em;
+    margin-bottom: 10px;
+    padding: 0.5em 0em 0.5em 1.2em;
+    text-align: left;
+    width: 14.45em;
+    /* box-shadow: inset 0px 0px 8px 1px #ACC66D; */
+}
+
+.have--item {
+	background-color: #B6B7B6;
+	border: none;
+	color: #DEDEDE;
+    display: inline-block;
+    font-size: 24px;
+    text-decoration: line-through;
+    height: 1.43em;
+    line-height: 24pt;
+    margin-left: 0.18em;
+    margin-right: 0.16em;
+    margin-bottom: 10px;
+    padding: 0.5em 0em 0.5em 1.2em;
+    text-align: left;
+    width: 14.45em;
+}
+
+.unchecked--remove  {
+	border: none;
+	padding: 0;
+	margin: 0;
+	background-color: #B6B7B6;
+	background-image: url('../images/remove-gray.png');
+    background-repeat: no-repeat;
+    height: 58px;
+	width: 58px;
+	vertical-align: bottom;
+	margin-bottom: 10px;
+}
+
+.checked--button  {
+	border: none;
+	padding: 0;
+	margin: 0 0 10px 9px;
+	background-color: #B6D57A;
+	background-image: url('../images/check.png');
+    background-repeat: no-repeat;
+    height: 58px;
+	width: 58px;
+	vertical-align: bottom;
+}
+
+.checked--remove {
+	border: none;
+	padding: 0;
+	margin: 0;
+	background-color: #B6D57A;
+	background-image: url('../images/remove-white.png');
+    background-repeat: no-repeat;
+    height: 58px;
+	width: 58px;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-bottom: 10px;
+}
+
+.list-items {
+	padding: 1.2em 0 2.2em 0;
+	/* text-align: center; */
+	background-color: #FFFFFF;
+	background-size: cover;
+	min-height: 6em;
+	/*max-width: 35em;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.list ul {
+	max-width: 35em;
+	list-style-type: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer {
+	padding: 2em 0;
+	/*background-color: #B6B7B6;*/
+	width: 100%;
+	/* max-width: 25em; */
+	margin-left: auto;
+	margin-right: auto;
+	border-top: solid 0.25em #AAAAAA;
+}
+
+.footer .mercato-logo {
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 0.7em;
+	margin-left: auto;
+	margin-right: auto;
+}
